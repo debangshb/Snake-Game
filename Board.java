@@ -9,7 +9,7 @@ public class Board extends JPanel implements ActionListener {
     private Image dot;
     private Image head;
 
-    private final int DOT_SIZE = 10; // 300 * 300 = 90000 / 100 = 900
+    private final int DOT_SIZE = 10;
     private final int ALL_DOTS = 900;
     private final int RANDOM_POSITION = 29;
 
@@ -57,7 +57,7 @@ public class Board extends JPanel implements ActionListener {
         dots = 3;
 
         for (int z = 0; z < dots; z++) {
-            x[z] = 50 - z * DOT_SIZE; // x[0] y[0] // x[1] y[1] // x[2] y[2]
+            x[z] = 50 - z * DOT_SIZE;
             y[z] = 50;
         }
 
@@ -69,10 +69,10 @@ public class Board extends JPanel implements ActionListener {
 
     public void locateApple() {
 
-        int r = (int) (Math.random() * RANDOM_POSITION); // 0 and 1 => 0.6 * 20 = 12* 10 = 120
+        int r = (int) (Math.random() * RANDOM_POSITION);
         apple_x = (r * DOT_SIZE);
 
-        r = (int) (Math.random() * RANDOM_POSITION); // 0 and 1 => 0.6 * 20 = 12* 10 = 120
+        r = (int) (Math.random() * RANDOM_POSITION);
         apple_y = (r * DOT_SIZE);
     }
 
@@ -166,7 +166,7 @@ public class Board extends JPanel implements ActionListener {
         if (downDirection) {
             y[0] += DOT_SIZE;
         }
-        // 240 + 10 = 250
+
     }
 
     public void actionPerformed(ActionEvent ae) {
