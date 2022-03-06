@@ -9,7 +9,7 @@ public class Snake extends JFrame {
         pack();
 
         setLocationRelativeTo(null);
-        // setTitle("Snake Game");
+        
         setResizable(false);
 
     }
